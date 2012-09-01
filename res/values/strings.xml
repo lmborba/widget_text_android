@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, RufrgsActivity!</string>
     <string name="app_name">Cardápio RU UFRGS</string>
+    <string name="waiting">Aguardando Resposta...</string>
 
 </resources>

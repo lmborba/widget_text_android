@@ -10,6 +10,6 @@
     android:minWidth="150dip"
     android:minHeight="150dip"
     android:updatePeriodMillis="180000"
-    android:initialLayout="@layout/main"
+    android:initialLayout="@layout/old_widget"
     android:previewImage="@drawable/widget_preview"
     />

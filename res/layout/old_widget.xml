@@ -11,7 +11,7 @@
         android:layout_height="fill_parent"
         android:minWidth="150dp"
         android:minHeight="150dp"
-        android:text="AGUARDANDO RESPOSTA"
+        android:text="@+string/waiting"
         android:textColor="#000000"
         android:gravity="center"
         android:layout_gravity="center_horizontal" />

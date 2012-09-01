@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- id's which will be in R.id and you'll use later -->
+  <item type="id" name="day_cardapio1" />
+  <item type="id" name="day_cardapio2" />
+  <item type="id" name="day_cardapio3" />
+  <item type="id" name="day_cardapio4" />
+  <item type="id" name="day_cardapio5" />
+</resources>

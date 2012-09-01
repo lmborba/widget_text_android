@@ -34,9 +34,17 @@ public final class R {
         public static final int widget_preview_light=0x7f020014;
     }
     public static final class id {
-        public static final int layout=0x7f060001;
-        public static final int textView1=0x7f060000;
-        public static final int update=0x7f060002;
+        /**  id's which will be in R.id and you'll use later 
+         */
+        public static final int day_cardapio1=0x7f050000;
+        public static final int day_cardapio2=0x7f050001;
+        public static final int day_cardapio3=0x7f050002;
+        public static final int day_cardapio4=0x7f050003;
+        public static final int day_cardapio5=0x7f050004;
+        public static final int layout=0x7f050007;
+        public static final int pageslider=0x7f050005;
+        public static final int textView1=0x7f050006;
+        public static final int update=0x7f050008;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -44,8 +52,9 @@ public final class R {
         public static final int widget_layout=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f050001;
-        public static final int hello=0x7f050000;
+        public static final int app_name=0x7f060001;
+        public static final int hello=0x7f060000;
+        public static final int waiting=0x7f060002;
     }
     public static final class xml {
         public static final int rufrgs_widget_provider=0x7f040000;
