@@ -39,7 +39,7 @@ public class UpdateRufrgsService extends Service {
 
 			RemoteViews remoteViews = new RemoteViews(this
 					.getApplicationContext().getPackageName(),
-					R.layout.main);
+					R.layout.old_widget);
 			// Set the text
 			
 			//TextView tv = (TextView) findViewById(R.id.textView1);
@@ -72,14 +72,17 @@ public class UpdateRufrgsService extends Service {
 			clickIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS,
 					allWidgetIds);
 */
-	        Intent clickIntent = new Intent("android.intent.action.MAIN");
+	        Intent clickIntent = new Intent(getBaseContext(), RufrgsActivity.class);
+	        PendingIntent pendingIntent = PendingIntent.getActivity(getBaseContext(), 0, clickIntent, 0);
+	        
+	        /*Intent clickIntent = new Intent("android.intent.action.MAIN");
 	        Context context = getApplicationContext();
 	        clickIntent.setComponent(new ComponentName(context.getPackageName(),RufrgsActivity.class.getName()));
 	        clickIntent.addCategory("android.intent.category.LAUNCHER");
-	        startActivity(clickIntent);
+	        startActivity(clickIntent);*/
 	        
-			PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, clickIntent,
-					PendingIntent.FLAG_UPDATE_CURRENT);
+			/*PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, clickIntent,
+					PendingIntent.FLAG_UPDATE_CURRENT);*/
 			remoteViews.setOnClickPendingIntent(R.id.textView1, pendingIntent);
 
 			appWidgetManager.updateAppWidget(widgetId, remoteViews);
